@@ -1,4 +1,4 @@
-const web3 = new Web3(ethereum);
+const web3 = new new Web3(new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org'));
 
 const isMetaMaskConnected = async () => {
     return ethereum.selectedAddress !== null;
